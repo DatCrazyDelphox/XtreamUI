@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
     <head>
         <meta charset="utf-8" />
-        <title>Xtream UI</title>
+        <title>Vision TV</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <!-- App favicon -->
@@ -74,16 +74,16 @@
                                 <i class="fe-settings noti-icon"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right profile-dropdown">
-                                <a href="./settings.php" class="dropdown-item notify-item"><span>Settings</span></a>
-                                <a href="./epgs.php" class="dropdown-item notify-item"><span>EPG's</span></a>
-                                <a href="./bouquets.php" class="dropdown-item notify-item"><span>Bouquets</span></a>
-                                <a href="./subresellers.php" class="dropdown-item notify-item"><span>Subresellers</span></a>
-                                <a href="./groups.php" class="dropdown-item notify-item"><span>Groups</span></a>
-                                <a href="./packages.php" class="dropdown-item notify-item"><span>Packages</span></a>
-                                <a href="./profiles.php" class="dropdown-item notify-item"><span>Transcode Profiles</span></a>
-                                <a href="./stream_categories.php" class="dropdown-item notify-item"><span>Stream Categories</span></a>
-                                <a href="./movie_categories.php" class="dropdown-item notify-item"><span>Movie Categories</span></a>
-                                <a href="#" class="dropdown-item notify-item"><span><span>Series Categories <i class="la la-exclamation-triangle"></i></span></a>
+                                <a href="./settings.php" class="dropdown-item notify-item"><span>Configurações</span></a>
+                                <a href="./epgs.php" class="dropdown-item notify-item"><span>EPGs</span></a>
+                                <a href="./bouquets.php" class="dropdown-item notify-item"><span>Listas</span></a>
+                                <a href="./subresellers.php" class="dropdown-item notify-item"><span>Sub-Revendas</span></a>
+                                <a href="./groups.php" class="dropdown-item notify-item"><span>Grupos</span></a>
+                                <a href="./packages.php" class="dropdown-item notify-item"><span>Pacotes</span></a>
+                                <a href="./profiles.php" class="dropdown-item notify-item"><span>Perfis de Transcode</span></a>
+                                <a href="./stream_categories.php" class="dropdown-item notify-item"><span>Categorias de Stream</span></a>
+                                <a href="./movie_categories.php" class="dropdown-item notify-item"><span>Categorias de Filmes</span></a>
+                                <a href="#" class="dropdown-item notify-item"><span><span>Categorias de Séries <i class="la la-exclamation-triangle"></i></span></a>
                             </div>
                         </li>
                         <?php } ?>
@@ -120,67 +120,67 @@
                             </li>
                             <?php if (($rPermissions["is_reseller"]) && ($rPermissions["reseller_client_connection_logs"])) { ?>
                             <li class="has-submenu">
-                                <a href="#"><i class="la la-exchange"></i>Connections <div class="arrow-down"></div></a>
+                                <a href="#"><i class="la la-exchange"></i>Conexões <div class="arrow-down"></div></a>
                                 <ul class="submenu">
-                                    <li><a href="./live_connections.php">Live Connections</a></li>
-                                    <li><a href="./user_activity.php">Activity Logs</a></li>
+                                    <li><a href="./live_connections.php">Conexões Ativas</a></li>
+                                    <li><a href="./user_activity.php">Logs de Atividade</a></li>
                                 </ul>
                             </li>
                             <?php }
                             if ($rPermissions["is_admin"]) { ?>
                             <li class="has-submenu">
-                                <a href="#"><i class="la la-server"></i>Servers <div class="arrow-down"></div></a>
+                                <a href="#"><i class="la la-server"></i>Servidores <div class="arrow-down"></div></a>
                                 <ul class="submenu">
-                                    <li><a href="./server.php">Add Server</a></li>
-                                    <li><a href="./install_server.php">Install Load Balancer</a></li>
-                                    <li><a href="./servers.php">Manage Servers</a></li>
+                                    <li><a href="./server.php">Adicionar Servidor</a></li>
+                                    <li><a href="./install_server.php">Instalar Load Balancer</a></li>
+                                    <li><a href="./servers.php">Listar Servidores</a></li>
                                 </ul>
                             </li>
                             <?php } ?>
                             <li class="has-submenu">
-                                <a href="#"> <i class="la la-user"></i>Users <div class="arrow-down"></div></a>
+                                <a href="#"> <i class="la la-user"></i>Usuários <div class="arrow-down"></div></a>
                                 <ul class="submenu">
                                     <?php if (($rPermissions["is_reseller"]) && ($rPermissions["total_allowed_gen_trials"] > 0)) { ?>
-                                    <li><a href="./user_reseller.php?trial">Generate Trial</a></li>
+                                    <li><a href="./user_reseller.php?trial">Gerar Teste</a></li>
                                     <?php } ?>
-                                    <li><a href="./user<?php if ($rPermissions["is_reseller"]) { echo "_reseller"; } ?>.php">Add User</a></li>
-                                    <li><a href="./users.php">Manage Users</a></li>
+                                    <li><a href="./user<?php if ($rPermissions["is_reseller"]) { echo "_reseller"; } ?>.php">Adicionar Usuários</a></li>
+                                    <li><a href="./users.php">Listar Usuários</a></li>
                                     <?php if ($rPermissions["is_admin"]) { ?>
                                     <li class="separator"></li>
-                                    <li><a href="./reg_user.php">Add Registered User</a></li>
-                                    <li><a href="./reg_users.php">Manage Registered Users</a></li>
+                                    <li><a href="./reg_user.php">Adicionar Usuário Registrado</a></li>
+                                    <li><a href="./reg_users.php">Listar Usuários Registrados</a></li>
                                     <?php } ?>
                                 </ul>
                             </li>
                             <?php if (($rPermissions["is_reseller"]) && ($rPermissions["create_sub_resellers"])) { ?>
                             <li class="has-submenu">
-                                <a href="#"> <i class="la la-users"></i>Subresellers <div class="arrow-down"></div></a>
+                                <a href="#"> <i class="la la-users"></i>Sub-Revendedores <div class="arrow-down"></div></a>
                                 <ul class="submenu">
                                     <?php if ($rPermissions["is_admin"]) { ?>
-                                    <li><a href="./reg_user.php">Add Subreseller</a></li>
+                                    <li><a href="./reg_user.php">Adicionar Sub-Revenda</a></li>
                                     <?php } else { ?>
-                                    <li><a href="./subreseller.php">Add Subreseller</a></li>
+                                    <li><a href="./subreseller.php">Adicionar Sub-Revenda</a></li>
                                     <?php } ?>
-                                    <li><a href="./reg_users.php">Manage Subreseller</a></li>
+                                    <li><a href="./reg_users.php">Listar Sub-Revendas</a></li>
                                 </ul>
                             </li>
                             <?php } ?>
                             <li class="has-submenu">
-                                <a href="#"> <i class="la la-tablet"></i>Devices <div class="arrow-down"></div></a>
+                                <a href="#"> <i class="la la-tablet"></i>Dispositivos <div class="arrow-down"></div></a>
                                 <?php if ($rPermissions["is_admin"]) { ?>
                                 <ul class="submenu">
-                                    <li><a href="./user<?php if ($rPermissions["is_reseller"]) { echo "_reseller"; } ?>.php?mag">Add MAG User</a></li>
-                                    <li><a href="./mag.php">Link MAG User</a></li>
-                                    <li><a href="./mags.php">Manage MAG Devices</a></li>
+                                    <li><a href="./user<?php if ($rPermissions["is_reseller"]) { echo "_reseller"; } ?>.php?mag">Adicionar Usuário MAG</a></li>
+                                    <li><a href="./mag.php">Link Usuário MAG</a></li>
+                                    <li><a href="./mags.php">Listar Dispositivos MAG</a></li>
                                     <li class="separator"></li>
-                                    <li><a href="./user<?php if ($rPermissions["is_reseller"]) { echo "_reseller"; } ?>.php?e2">Add Enigma User</a></li>
-                                    <li><a href="./enigma.php">Link Enigma User</a></li>
-                                    <li><a href="./enigmas.php">Manage Enigma Devices</a></li>
+                                    <li><a href="./user<?php if ($rPermissions["is_reseller"]) { echo "_reseller"; } ?>.php?e2">Adicionar Usuário Enigma</a></li>
+                                    <li><a href="./enigma.php">Link Usuário Enigma</a></li>
+                                    <li><a href="./enigmas.php">Listar Dispositivos Enigma</a></li>
                                 </ul>
                                 <?php } else { ?>
                                 <ul class="submenu">
-                                    <li><a href="./mags.php">Manage MAG Devices</a></li>
-                                    <li><a href="./enigmas.php">Manage Enigma Devices</a></li>
+                                    <li><a href="./mags.php">Listar Dispositivos MAG</a></li>
+                                    <li><a href="./enigmas.php">Listar Dispositivos Enigma</a></li>
                                 </ul>
                                 <?php } ?>
                             </li>
@@ -188,41 +188,41 @@
                             <li class="has-submenu">
                                 <a href="#"> <i class="la la-video-camera"></i>VOD <div class="arrow-down"></div></a>
                                 <ul class="submenu">
-                                    <li><a href="#">Add Movie <i class="la la-exclamation-triangle"></i></a></li>
-                                    <li><a href="#">Manage Movies <i class="la la-exclamation-triangle"></i></a></li>
+                                    <li><a href="#">Adicionar Filme <i class="la la-exclamation-triangle"></i></a></li>
+                                    <li><a href="#">Listar Filmes <i class="la la-exclamation-triangle"></i></a></li>
                                     <li class="separator"></li>
-                                    <li><a href="#">Add TV Series <i class="la la-exclamation-triangle"></i></a></li>
-                                    <li><a href="#">Manage TV Series <i class="la la-exclamation-triangle"></i></a></li>
+                                    <li><a href="#">Adicionar Séries de TV <i class="la la-exclamation-triangle"></i></a></li>
+                                    <li><a href="#">Listar Séries de TV <i class="la la-exclamation-triangle"></i></a></li>
                                     <li class="separator"></li>
-                                    <li><a href="#">Add TV Episode <i class="la la-exclamation-triangle"></i></a></li>
-                                    <li><a href="#">Manage TV Episodes <i class="la la-exclamation-triangle"></i></a></li>
+                                    <li><a href="#">Adicionar Episódios de TV <i class="la la-exclamation-triangle"></i></a></li>
+                                    <li><a href="#">Listar Episódios de TV <i class="la la-exclamation-triangle"></i></a></li>
                                 </ul>
                             </li>
                             <li class="has-submenu">
                                 <a href="#"> <i class="la la-play-circle-o"></i>Streams <div class="arrow-down"></div></a>
                                 <ul class="submenu">
-                                    <li><a href="./stream.php">Add Stream</a></li>
-                                    <li><a href="./stream.php?import">Import Streams</a></li>
-                                    <li><a href="./streams.php">Manage Streams</a></li>
+                                    <li><a href="./stream.php">Adicionar Stream</a></li>
+                                    <li><a href="./stream.php?import">Importar Streams</a></li>
+                                    <li><a href="./streams.php">Listar Streams</a></li>
                                 </ul>
                             </li>
                             <?php }
                             if (($rPermissions["is_reseller"]) && ($rPermissions["reset_stb_data"])) { ?>
                             <li class="has-submenu">
-                                <a href="#"> <i class="la la-play-circle-o"></i>Content <div class="arrow-down"></div></a>
+                                <a href="#"> <i class="la la-play-circle-o"></i>Conteúdo <div class="arrow-down"></div></a>
                                 <ul class="submenu">
                                     <li><a href="./streams.php">Streams</a></li>
-                                    <li><a href="#">Movies <i class="la la-exclamation-triangle"></i></a></li>
-                                    <li><a href="#">Series <i class="la la-exclamation-triangle"></i></a></li>
+                                    <li><a href="#">Filmes <i class="la la-exclamation-triangle"></i></a></li>
+                                    <li><a href="#">Séries <i class="la la-exclamation-triangle"></i></a></li>
                                 </ul>
                             </li>
                             <?php }
                             if ($rPermissions["is_reseller"]) { ?>
                             <li class="has-submenu">
-                                <a href="#"> <i class="la la-envelope"></i>Support <div class="arrow-down"></div></a>
+                                <a href="#"> <i class="la la-envelope"></i>Suporte <div class="arrow-down"></div></a>
                                 <ul class="submenu">
-                                    <li><a href="./ticket.php">Create Ticket</a></li>
-                                    <li><a href="./tickets.php">Manage Tickets</a></li>
+                                    <li><a href="./ticket.php">Criar Ticket</a></li>
+                                    <li><a href="./tickets.php">Listar Tickets</a></li>
                                 </ul>
                             </li>
                             <?php }
@@ -233,11 +233,11 @@
                             <li class="has-submenu">
                                 <a href="#"> <i class="mdi mdi-file-document-outline"></i>Logs <div class="arrow-down"></div></a>
                                 <ul class="submenu">
-                                    <li><a href="./live_connections.php">Live Connections</a></li>
-                                    <li><a href="./user_activity.php">Activity Logs</a></li>
-                                    <li><a href="#">Client Logs <i class="la la-exclamation-triangle"></i></a></li>
-                                    <li><a href="#">Stream Logs <i class="la la-exclamation-triangle"></i></a></li>
-                                    <li><a href="./mag_events.php">Manage MAG Events</a></li>
+                                    <li><a href="./live_connections.php">Conexões Ativas</a></li>
+                                    <li><a href="./user_activity.php">Logs de Atividade</a></li>
+                                    <li><a href="#">Logs de Clientes <i class="la la-exclamation-triangle"></i></a></li>
+                                    <li><a href="#">Logs de Streams <i class="la la-exclamation-triangle"></i></a></li>
+                                    <li><a href="./mag_events.php">Ver Eventos MAG</a></li>
                                 </ul>
                             </li>
                             <?php } ?>

@@ -16,10 +16,10 @@ if ((isset($_POST["username"])) && (isset($_POST["password"]))) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
     <head>
         <meta charset="utf-8" />
-        <title>Xtream Codes - Login</title>
+        <title>VisionTV - Login</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <!-- App favicon -->
@@ -38,37 +38,37 @@ if ((isset($_POST["username"])) && (isset($_POST["password"]))) {
                         <?php if ((isset($_STATUS)) && ($_STATUS == 0)) { ?>
                         <div class="alert alert-danger alert-dismissible bg-danger text-white border-0 fade show" role="alert">
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            Incorrect username or password! Please try again.
+                            Nome de usuário ou senha incorretos.
                         </div>
                         <?php } else if ((isset($_STATUS)) && ($_STATUS == -1)) { ?>
                         <div class="alert alert-danger alert-dismissible bg-danger text-white border-0 fade show" role="alert">
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            You have been banned from accessing this system.
+                            Você foi banido de acessar o sistema.
                         </div>
                         <?php } else if ((isset($_STATUS)) && ($_STATUS == -2)) { ?>
                         <div class="alert alert-danger alert-dismissible bg-danger text-white border-0 fade show" role="alert">
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            Your account has been disabled, you are no longer able to access the system.
+                            Sua conta foi desativada, você não será mais capaz de acessar o sistema.
                         </div>
                         <?php } ?>
                         <div class="card">
                             <div class="card-body p-4">
                                 <div class="text-center w-75 m-auto">
-                                    <span><img src="assets/images/logo-back.png" width="250px" alt=""></span>
+                                    <span><img src="assets/images/logo-1.bmp" width="250px" alt=""></span>
                                     <p class="text-muted mb-4 mt-3"></p>
                                 </div>
-                                <h5 class="auth-title">Admin Interface</h5>
+                                <h5 class="auth-title">Interface Admin</h5>
                                 <form action="./login.php" method="POST">
                                     <div class="form-group mb-3">
-                                        <label for="username">Username</label>
-                                        <input class="form-control" type="text" id="username" name="username" required="" placeholder="Enter your username">
+                                        <label for="username">Nome de Usuário</label>
+                                        <input class="form-control" type="text" id="username" name="username" required="" placeholder="Nome de usuário">
                                     </div>
                                     <div class="form-group mb-3">
-                                        <label for="password">Password</label>
-                                        <input class="form-control" type="password" required="" id="password" name="password" placeholder="Enter your password">
+                                        <label for="password">Senha</label>
+                                        <input class="form-control" type="password" required="" id="password" name="password" placeholder="Senha">
                                     </div>
                                     <div class="form-group mb-0 text-center">
-                                        <button class="btn btn-danger btn-block" type="submit"> SIGN IN </button>
+                                        <button class="btn btn-danger btn-block" type="submit"> ENTRAR </button>
                                     </div>
                                 </form>
                             </div> <!-- end card-body -->

@@ -3841,9 +3841,9 @@ input[type="button"].btn-block {
           flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: rgb(0, 0, 0);
   background-clip: border-box;
-  border: 0 solid #f7f7f7;
+  border: solid #c50000;
   border-radius: 0.25rem; }
   .card > hr {
     margin-right: 0;
@@ -9000,7 +9000,7 @@ button:focus {
   margin: 10px 0;
   font-weight: 500;
   font-family: "Work Sans", sans-serif;
-  color: #414d5f; }
+  color: #dadada; }
 
 .font-13 {
   font-size: 13px !important; }

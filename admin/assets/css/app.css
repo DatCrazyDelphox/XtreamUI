@@ -3169,9 +3169,9 @@ body.authentication-bg{
     background-position:center
 }
 .auth-title{
-    background-color:#f7fafb;
-    border-top:1px solid #ecf2f4;
-    border-bottom:1px solid #ecf2f4;
+    background-color:#000000;
+    border-top:1px solid #c50000;
+    border-bottom:1px solid #c50000;
     padding:12px 2.25rem;
     margin:0 -2.25rem 30px;
     text-transform:uppercase;
@@ -3179,7 +3179,7 @@ body.authentication-bg{
     text-align:center
 }
 body.authentication-bg-pattern{
-    background-image:url(../images/bg.png)
+    background-image:url(../images/giphy.gif)
 }
 .logout-icon{
     width:140px

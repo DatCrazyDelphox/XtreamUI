@@ -20,7 +20,7 @@ if ($rSettings["sidebar"]) {
                             <ul class="nav nav-tabs nav-bordered dashboard-tabs">
                                 <li class="nav-item">
                                     <a data-id="home" href="#" class="nav-link active">
-                                        Overview
+                                        Geral
                                     </a>
                                 </li>
                                 <?php foreach ($rServers as $rServer) { ?>
@@ -50,7 +50,7 @@ if ($rSettings["sidebar"]) {
                                         <div class="col-6">
                                             <div class="text-right">
                                                 <h3 class="text-dark my-1"><span data-plugin="counterup" class="entry">0</span></h3>
-                                                <p class="text-muted mb-1 text-truncate">Open Connections</p>
+                                                <p class="text-muted mb-1 text-truncate">Conexões Ativas</p>
                                             </div>
                                         </div>
                                     </div>
@@ -68,7 +68,7 @@ if ($rSettings["sidebar"]) {
                                         <div class="col-6">
                                             <div class="text-right">
                                                 <h3 class="text-dark my-1"><span data-plugin="counterup" class="entry">0</span></h3>
-                                                <p class="text-muted mb-1 text-truncate">Online Users</p>
+                                                <p class="text-muted mb-1 text-truncate">Usuários Online</p>
                                             </div>
                                         </div>
                                     </div>
@@ -86,7 +86,7 @@ if ($rSettings["sidebar"]) {
                                         <div class="col-6">
                                             <div class="text-right">
                                                 <h3 class="text-dark my-1"><span data-plugin="counterup" class="entry">0</span> <small>Mbps</small></h3>
-                                                <p class="text-muted mb-1 text-truncate">Input Flow</p>
+                                                <p class="text-muted mb-1 text-truncate">Fluxo de Entrada</p>
                                             </div>
                                         </div>
                                     </div>
@@ -104,7 +104,7 @@ if ($rSettings["sidebar"]) {
                                         <div class="col-6">
                                             <div class="text-right">
                                                 <h3 class="text-dark my-1"><span data-plugin="counterup" class="entry">0</span> <small>Mbps</small></h3>
-                                                <p class="text-muted mb-1 text-truncate">Output Flow</p>
+                                                <p class="text-muted mb-1 text-truncate">Fluxo de Saída</p>
                                             </div>
                                         </div>
                                     </div>
@@ -122,12 +122,12 @@ if ($rSettings["sidebar"]) {
                                         <div class="col-6">
                                             <div class="text-right">
                                                 <h3 class="text-dark my-1"><span data-plugin="counterup" class="entry">0</span></h3>
-                                                <p class="text-muted mb-1 text-truncate">Active Streams</p>
+                                                <p class="text-muted mb-1 text-truncate">Streams Ativas</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="mt-3">
-                                        <h6 class="text-uppercase">Total Streams <span class="float-right entry-percentage">0</span></h6>
+                                        <h6 class="text-uppercase">Total de Streams <span class="float-right entry-percentage">0</span></h6>
                                         <div class="progress progress-sm m-0">
                                             <div class="progress-bar bg-purple" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
                                                 <span class="sr-only">0%</span>
@@ -148,7 +148,7 @@ if ($rSettings["sidebar"]) {
                                         <div class="col-6">
                                             <div class="text-right">
                                                 <h3 class="text-dark my-1"><span data-plugin="counterup" class="entry">0</span><small>%</small></h3>
-                                                <p class="text-muted mb-1 text-truncate">Avg CPU Usage</p>
+                                                <p class="text-muted mb-1 text-truncate">Uso Médio de CPU</p>
                                             </div>
                                         </div>
                                     </div>
@@ -174,7 +174,7 @@ if ($rSettings["sidebar"]) {
                                         <div class="col-6">
                                             <div class="text-right">
                                                 <h3 class="text-dark my-1"><span data-plugin="counterup" class="entry">0</span><small>%</small></h3>
-                                                <p class="text-muted mb-1 text-truncate">Avg Memory Usage</p>
+                                                <p class="text-muted mb-1 text-truncate">Uso Médio de Memória</p>
                                             </div>
                                         </div>
                                     </div>
@@ -200,7 +200,7 @@ if ($rSettings["sidebar"]) {
                                         <div class="col-6">
                                             <div class="text-right">
                                                 <h3 class="text-dark my-1 entry">--</h3>
-                                                <p class="text-muted mb-1 text-truncate">System Uptime</p>
+                                                <p class="text-muted mb-1 text-truncate">Uptime do Sistema</p>
                                             </div>
                                         </div>
                                     </div>
@@ -227,12 +227,12 @@ if ($rSettings["sidebar"]) {
                                         <div class="col-6">
                                             <div class="text-right">
                                                 <h3 class="text-dark my-1"><span data-plugin="counterup" class="entry">0</span></h3>
-                                                <p class="text-muted mb-1 text-truncate">Open Connections</p>
+                                                <p class="text-muted mb-1 text-truncate">Conexões Ativas</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="mt-3">
-                                        <h6 class="text-uppercase">Total Connections <span class="float-right entry-percentage">0</span></h6>
+                                        <h6 class="text-uppercase">Total de Conexões <span class="float-right entry-percentage">0</span></h6>
                                         <div class="progress progress-sm m-0">
                                             <div class="progress-bar bg-purple" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
                                                 <span class="sr-only">0%</span>
@@ -253,12 +253,12 @@ if ($rSettings["sidebar"]) {
                                         <div class="col-6">
                                             <div class="text-right">
                                                 <h3 class="text-dark my-1"><span data-plugin="counterup" class="entry">0</span></h3>
-                                                <p class="text-muted mb-1 text-truncate">Online Users</p>
+                                                <p class="text-muted mb-1 text-truncate">Usuários Online</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="mt-3">
-                                        <h6 class="text-uppercase">Total Active <span class="float-right entry-percentage">0</span></h6>
+                                        <h6 class="text-uppercase">Total Ativos <span class="float-right entry-percentage">0</span></h6>
                                         <div class="progress progress-sm m-0">
                                             <div class="progress-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
                                                 <span class="sr-only">0%</span>
@@ -279,12 +279,12 @@ if ($rSettings["sidebar"]) {
                                         <div class="col-6">
                                             <div class="text-right">
                                                 <h3 class="text-dark my-1"><span data-plugin="counterup" class="entry">0</span> <small>Mbps</small></h3>
-                                                <p class="text-muted mb-1 text-truncate">Input Flow</p>
+                                                <p class="text-muted mb-1 text-truncate">Fluxo de Entrada</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="mt-3">
-                                        <h6 class="text-uppercase">Network Load <span class="float-right entry-percentage">0%</span></h6>
+                                        <h6 class="text-uppercase">Uso de Rede <span class="float-right entry-percentage">0%</span></h6>
                                         <div class="progress progress-sm m-0">
                                             <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
                                                 <span class="sr-only">0%</span>
@@ -305,12 +305,12 @@ if ($rSettings["sidebar"]) {
                                         <div class="col-6">
                                             <div class="text-right">
                                                 <h3 class="text-dark my-1"><span data-plugin="counterup" class="entry">0</span> <small>Mbps</small></h3>
-                                                <p class="text-muted mb-1 text-truncate">Output Flow</p>
+                                                <p class="text-muted mb-1 text-truncate">Fluxo de Saída</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="mt-3">
-                                        <h6 class="text-uppercase">Network Load <span class="float-right entry-percentage">0%</span></h6>
+                                        <h6 class="text-uppercase">Uso de Rede <span class="float-right entry-percentage">0%</span></h6>
                                         <div class="progress progress-sm m-0">
                                             <div class="progress-bar bg-info" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
                                                 <span class="sr-only">0%</span>
@@ -331,12 +331,12 @@ if ($rSettings["sidebar"]) {
                                         <div class="col-6">
                                             <div class="text-right">
                                                 <h3 class="text-dark my-1"><span data-plugin="counterup" class="entry">0</span></h3>
-                                                <p class="text-muted mb-1 text-truncate">Active Streams</p>
+                                                <p class="text-muted mb-1 text-truncate">Streams Ativas</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="mt-3">
-                                        <h6 class="text-uppercase">Total Streams <span class="float-right entry-percentage">0</span></h6>
+                                        <h6 class="text-uppercase">Total de Streams <span class="float-right entry-percentage">0</span></h6>
                                         <div class="progress progress-sm m-0">
                                             <div class="progress-bar bg-purple" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
                                                 <span class="sr-only">0%</span>
@@ -357,7 +357,7 @@ if ($rSettings["sidebar"]) {
                                         <div class="col-6">
                                             <div class="text-right">
                                                 <h3 class="text-dark my-1"><span data-plugin="counterup" class="entry">0</span><small>%</small></h3>
-                                                <p class="text-muted mb-1 text-truncate">CPU Usage</p>
+                                                <p class="text-muted mb-1 text-truncate">Uso da CPU</p>
                                             </div>
                                         </div>
                                     </div>
@@ -383,7 +383,7 @@ if ($rSettings["sidebar"]) {
                                         <div class="col-6">
                                             <div class="text-right">
                                                 <h3 class="text-dark my-1"><span data-plugin="counterup" class="entry">0</span><small>%</small></h3>
-                                                <p class="text-muted mb-1 text-truncate">Memory Usage</p>
+                                                <p class="text-muted mb-1 text-truncate">Uso da Memória</p>
                                             </div>
                                         </div>
                                     </div>
@@ -409,7 +409,7 @@ if ($rSettings["sidebar"]) {
                                         <div class="col-6">
                                             <div class="text-right">
                                                 <h3 class="text-dark my-1 entry">--</h3>
-                                                <p class="text-muted mb-1 text-truncate">System Uptime</p>
+                                                <p class="text-muted mb-1 text-truncate">Uptime do Sistema</p>
                                             </div>
                                         </div>
                                     </div>
